@@ -5,15 +5,15 @@
 #include <M5Stack.h>
 #include <WiFi.h>
 
-const char* ssid = "YOUR_WIFI_SSID";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid = "Takafumi’s iPhone (76)";
+const char* password = "takafumi";
 
 #define DYNAMIXEL_SERIAL Serial2 
 #define DYNAMIXEL_BAUDRATE 1000000
 Dynamixel2Arduino dxl(DYNAMIXEL_SERIAL);
 
 WiFiClient client;
-IPAddress server(172, 20, 10, 2);
+IPAddress server(192,168,127,1);
 
 void disableTorqueControl() {
   for (uint8_t id = 2; id <= 5; id++) {
