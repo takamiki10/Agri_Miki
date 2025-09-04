@@ -7,7 +7,7 @@ const std::vector<int> dynamixelIDs = {11, 12, 13, 14};
 const int AXES_1_MOTORS[] = {11, 12};  // Controlled by axes[1]
 const int AXES_2_MOTORS[] = {13, 14};  // Controlled by axes[2] (inverted)
 
-const int MAX_VELOCITY = 300;  // Adjust as needed (rev/min)
+const int MAX_VELOCITY = 100;  // Adjust as needed (rev/min)
 
 //----------------------------------------------//
 
